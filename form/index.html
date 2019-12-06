@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Formulaire de contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="test">
+        <div class="total">
+            <div class="square">
+                <div class="content">
+
+                    <!-- formulaire -->
+                    <form class="text-center border border-light p-5" method="post" action="">
+                        <!-- Titre -->
+                        <p class="h4 mb-4"><b>Contactez-nous</b></p>
+
+                        <!-- Prenom -->
+                        <input type="text" id="defaultContactFormMainName" class="form-control mb-4"
+                            placeholder="Prénom" required=""
+                            oninvalid="this.setCustomValidity('Il faudrait peut-etre entrer votre prénom')">
+
+                        <!-- Nom -->
+                        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nom"
+                            required=""
+                            oninvalid="this.setCustomValidity('Il faudrait peut-etre nous donner votre nom')">
+
+                        <!-- Email -->
+                        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail"
+                            required="" oninvalid="this.setCustomValidity('Votre e-mail ne serait pas de refus')">
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+                                placeholder="Message" required=""
+                                oninvalid="this.setCustomValidity('Il faudrait peut-etre nous dire quelque chose')"></textarea>
+                        </div>
+
+                        <!-- Copie -->
+                        <div class="custom-control custom-checkbox mb-4">
+                            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                            <label class="custom-control-label" for="defaultContactFormCopy">
+                                Envoyez-moi une copie de ce message
+                            </label>
+                        </div>
+
+                        <!-- Send button -->
+                        <button class="btn btn-info btn-block" type="submit">Envoyer</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

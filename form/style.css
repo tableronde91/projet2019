@@ -1,0 +1,53 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.test {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.total {
+    background: url(images/bg.png) no-repeat center center fixed;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.square {
+    background: white;
+    height: 70%;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 7%;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+}
+
+#defaultContactFormMainName, #defaultContactFormName, #defaultContactFormEmail {
+    border: 0px;
+    border-bottom: 1px solid grey;
+    border-radius: 0;
+}
+
+#defaultContactFormMainName:focus, #defaultContactFormName, #defaultContactFormEmail, #exampleFormControlTextarea2 {
+    box-shadow: none;
+}
+
+#exampleFormControlTextarea2 {
+    border: 1px solid grey;
+}
